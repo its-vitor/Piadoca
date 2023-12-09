@@ -176,7 +176,11 @@
     </script>
 </body>
 </html>
-
+        function moveButton(event) {
+            var button = event.target;
+            button.style.left = Math.floor(Math.random() * 200) + 'px';
+            button.style.top = Math.floor(Math.random() * 200) + 'px';
+        }
         
         function showNewContent() {
             document.querySelector('header').style.display = 'none';
